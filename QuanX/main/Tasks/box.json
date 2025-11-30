@@ -1,5 +1,5 @@
 {
-  "id": "caiyun_weather_config",
+  "id": "caiyun_weather_cfg",
   "name": "彩云天气 v2.7.1 配置面板",
   "desc": "自动定位｜预警｜降雨提醒｜睡前预报｜AI 摘要（支持第三方代理 & gpt-4）",
   "icon": "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_DAY.gif",
@@ -28,31 +28,31 @@
         {
           "id": "display_location",
           "name": "调试模式",
-          "type": "boolean",
+          "type": "switch",
           "default": false
         },
         {
           "id": "rain_reminder",
           "name": "降雨提醒",
-          "type": "boolean",
+          "type": "switch",
           "default": true
         },
         {
           "id": "bedtime_forecast",
           "name": "睡前预报",
-          "type": "boolean",
+          "type": "switch",
           "default": true
         },
         {
           "id": "merge_notify",
           "name": "合并通知（实时+今日）",
-          "type": "boolean",
+          "type": "switch",
           "default": true
         },
         {
           "id": "ai_switch",
           "name": "AI 摘要开关",
-          "type": "boolean",
+          "type": "switch",
           "default": true
         },
         {
