@@ -1,0 +1,69 @@
+{
+  "id": "0xai.caiyun",
+  "name": "彩云天气 v2.7 AI 增强版",
+  "desc": "自动定位｜预警｜降雨提醒｜睡前预报｜AI 摘要",
+  "icon": "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_DAY.gif",
+  "author": "@Peng-Ym @0xAI",
+  "repo": "https://github.com/0xAI-dev/QuanX",
+  "apps": [
+    {
+      "id": "caiyun",
+      "name": "彩云天气",
+      "keys": [
+        "caiyun_token",
+        "tencent_token",
+        "display_location",
+        "rain_reminded",
+        "bedtime_done",
+        "alerted",
+        "rain_reminder",
+        "bedtime_forecast",
+        "openai_key"
+      ],
+      "settings": [
+        {
+          "id": "display_location",
+          "name": "调试模式",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "id": "rain_reminder",
+          "name": "降雨提醒",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "id": "bedtime_forecast",
+          "name": "睡前预报",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "id": "caiyun_token",
+          "name": "彩云令牌",
+          "type": "string",
+          "placeholder": "填写 CY 开头的 32 位字符串"
+        },
+        {
+          "id": "tencent_token",
+          "name": "腾讯地图 Key",
+          "type": "string",
+          "placeholder": "填写腾讯位置服务 Key"
+        },
+        {
+          "id": "openai_key",
+          "name": "OpenAI Key（可选）",
+          "type": "string",
+          "placeholder": "sk-xxx，留空则不启用 AI 摘要"
+        }
+      ],
+      "author": "@0xAI",
+      "repo": "https://github.com/0xAI-dev/QuanX",
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_DAY.gif",
+        "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_NIGHT.gif"
+      ]
+    }
+  ]
+}
