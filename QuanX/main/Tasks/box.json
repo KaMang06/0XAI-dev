@@ -1,7 +1,7 @@
 {
   "id": "0xai.caiyun",
-  "name": "彩云天气 v2.7 AI 增强版",
-  "desc": "自动定位｜预警｜降雨提醒｜睡前预报｜AI 摘要",
+  "name": "彩云天气 v2.7.1 AI 增强版",
+  "desc": "自动定位｜预警｜降雨提醒｜睡前预报｜AI 摘要（支持第三方代理 & gpt-4）",
   "icon": "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_DAY.gif",
   "author": "@Peng-Ym @0xAI",
   "repo": "https://github.com/0xAI-dev/QuanX",
@@ -18,7 +18,11 @@
         "alerted",
         "rain_reminder",
         "bedtime_forecast",
-        "openai_key"
+        "merge_notify",
+        "ai_switch",
+        "openai_key",
+        "ai_proxy",
+        "ai_model"
       ],
       "settings": [
         {
@@ -40,29 +44,47 @@
           "default": true
         },
         {
+          "id": "merge_notify",
+          "name": "合并通知（实时+今日）",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "id": "ai_switch",
+          "name": "AI 摘要开关",
+          "type": "boolean",
+          "default": true
+        },
+        {
           "id": "caiyun_token",
           "name": "彩云令牌",
           "type": "string",
-          "placeholder": "填写 CY 开头的 32 位字符串"
+          "placeholder": "CY 开头 32 位字符串"
         },
         {
           "id": "tencent_token",
           "name": "腾讯地图 Key",
           "type": "string",
-          "placeholder": "填写腾讯位置服务 Key"
+          "placeholder": "腾讯位置服务 Key"
         },
         {
           "id": "openai_key",
           "name": "OpenAI Key（可选）",
           "type": "string",
           "placeholder": "sk-xxx，留空则不启用 AI 摘要"
+        },
+        {
+          "id": "ai_proxy",
+          "name": "第三方代理地址",
+          "type": "string",
+          "default": "https://api.openai-hub.com/v1/chat/completions"
+        },
+        {
+          "id": "ai_model",
+          "name": "模型名称",
+          "type": "string",
+          "default": "gpt-4"
         }
-      ],
-      "author": "@0xAI",
-      "repo": "https://github.com/0xAI-dev/QuanX",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_DAY.gif",
-        "https://raw.githubusercontent.com/58xinian/icon/master/Weather/CLEAR_NIGHT.gif"
       ]
     }
   ]
